@@ -1,148 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacque Miller - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-bottom: 1px solid #ddd;
-        }
-        header img {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 10px 0;
-        }
-        h2 {
-            font-size: 1.8em;
-            margin-top: 30px;
-        }
-        .hobbies {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .hobby-item {
-            text-align: center;
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .hobby-item img {
-            width: 100px;
-            height: auto;
-        }
-        .projects {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .project-item {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .project-item img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #777;
-        }
-    </style>
+    <meta charset="utf-8" />
+    <title>Jacque Miller/title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/myIcon.ico">
 </head>
 <body>
-    <header>
-        <img src="assets/avatar.png" alt="Jane Wilson Avatar">
-        <h1>Jacque Miller</h1>
-        <p>Hobbies & Interests</p>
-    </header>
-
-    <section>
-        <h2>Hobbies & Interests</h2>
-        <div class="hobbies">
-            <div class="hobby-item">
-                <img src="assets/coding.png" alt="Coding">
-                <p>Coding</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/reading.png" alt="Reading">
-                <p>Reading</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/mobile-apps.png" alt="Mobile Apps">
-                <p>Mobile Apps</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/hiking.png" alt="Hiking">
-                <p>Hiking</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/photography.png" alt="Photography">
-                <p>Photography</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/painting.png" alt="Painting">
-                <p>Painting</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/baking.png" alt="Baking">
-                <p>Baking</p>
-            </div>
-            <div class="hobby-item">
-                <img src="assets/volunteering.png" alt="Volunteering">
-                <p>Volunteering</p>
+    <div id="wrapper">
+        <div id="header">
+            <a href="index.html" class="button">Jacque Miller</a>
+            <a href="Course Projects.html" class="button">Course Projects</a>
+            <a href="hobbies.html" class="button">Hobbies</a>
+            <a href="Project2.html" class="button">Project 2</a>
+            <a href="Project3.html" class="button">Project 3</a>
+        </div>
+        <div id="content">
+            <div id="leftEdge">&nbsp;</div>
+            <div id="rightEdge">&nbsp;</div>
+            <div id="pageContent">
+                <img src="./images/Jane.png" alt="Jane Wilson Avatar" style="float: right; width: 200px; margin-top: 10px">
+                <h2>Jacque Miller</h2>
+                <p>| JacqueMiller@oakland.edu |
+                    <a href="https://Jacquemiller01.github.io" target="_blank">Website</a><br>
+                    School of Engineering and Computer Science<br>
+                    Oakland University<br>
+                    Rochester, MI 48309
+                </p>
+                <h2>Career Objective</h2>
+                <p>Seeking a software engineering internship to apply skills in mobile app development and web technologies.</p>
+                <h2>Education</h2>
+                <ul>
+                    <li>B.S. in Computer Science, Oakland University (Expected May 2026)</li>
+                    <li>GPA: 3.8/4.0</li>
+                </ul>
+                <h2>Relevant Coursework</h2>
+                <ul>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Mobile App Development</li>
+                    <li>Database Systems</li>
+                </ul>
+                <h2>Work Experience</h2>
+                <ul>
+                    <h3>Math & Coding Tutor | Rochester Hills, MI</h3>
+                    <li>Jan 2023 – Aug 2024</li>
+                    <li>Tutored high school students in Python, Java, and Algebra.</li>
+                    <li>Created personalized lesson plans and coding exercises.</li>
+                    <li>Helped students improve average grades by one letter grade.</li>
+                </ul>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Programming Languages: Java, Python, C++, JavaScript, SQL, HTML/CSS</li>
+                    <li>Design Skills: Responsive Design, Accessibility (WCAG), UX Wireframing</li>
+                    <li>Software & Tools: Android Studio, Git/GitHub, Eclipse, VS Code, MySQL, Figma</li>
+                    <li>Operating Systems: Windows, macOS, Linux</li>
+                </ul>
+                <h2>Activities & Achievements</h2>
+                <ul>
+                    <li>Member, Women in Computing (OU chapter) - organized coding workshops for high school girls</li>
+                    <li>Dean's List, 4 consecutive semesters</li>
+                    <li>Hackathon Participant - OU Hack Day 2024 (team project: "EcoTrack" app for recycling)</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project-item">
-                <h3>Movie Recommendation System</h3>
-                <p>A database-driven movie recommender with UI mockup and schema.</p>
-                <img src="assets/movie-rec-ui.png" alt="Movie Recommendation UI">
-                <img src="assets/db-schema.png" alt="Database Schema">
-            </div>
-            <div class="project-item">
-                <h3>Grocery List App</h3>
-                <p>Mobile app mockups for managing grocery lists.</p>
-                <img src="assets/grocery-list-1.png" alt="Grocery List Screen 1">
-                <img src="assets/grocery-list-2.png" alt="Grocery List Screen 2">
-                <img src="assets/grocery-list-3.png" alt="Grocery List Screen 3">
-            </div>
-            <div class="project-item">
-                <h3>Tea Time Magazine Crafting Page</h3>
-                <p>A sample crafting & DIY ideas page.</p>
-                <img src="assets/tea-time-page.png" alt="Tea Time Magazine Page">
-            </div>
+        <br>
+        <div id="footer">
+            <p>last updated: 2026</p> <!-- Updated year -->
         </div>
-    </section>
-
-    <footer>
+    </div>
+</body>
+</html>
         <p>&copy; 2026 Jacque Miller. Hosted on GitHub Pages.</p>
     </footer>
 </body>
