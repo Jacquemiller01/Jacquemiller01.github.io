@@ -1,5 +1,8 @@
 body {
-    background-color: beige;
+    background-color: #121212; /* Black background */
+    color: #FFFFFF; /* White text */
+    margin: 0;
+    padding: 0;
 }
 
 #pageContent ul {
@@ -21,64 +24,71 @@ body {
     margin: 0 0 8px 12px;
     border-radius: 8px;
     object-fit: cover;
-    border: 2px dashed coral;
-    border-collapse: collapse;
+    border: 2px dashed #DAA520; /* Gold dashed border */
 }
 
 #wrapper {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* Centered with max width for better layout */
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    height: auto; /* Fixed: Auto height for better layout */
-    background-color: white;
-    color: #333; /* Fixed: Added missing color */
+    height: auto;
+    background-color: #121212; /* Black to match body */
+    color: #FFFFFF; /* White text */
+    padding: 20px;
 }
 
 #header {
-    width: 99.8%;
-    height: 50px;
-    background: #FF8080;
-    border: solid #CCCCCC thin;
-    border-bottom: solid #f9e9a1 10px;
-    border-top: solid #2297a6 10px;
-    padding-top: 20px;
-    align-content: center;
+    width: 100%;
+    height: auto;
+    background: #DAA520; /* Gold background */
+    border: solid #FFFFFF thin; /* White border */
+    border-bottom: solid #FFFFFF 2px;
+    border-top: solid #FFFFFF 2px;
+    padding: 10px 0;
     text-align: center;
 }
 
 a.button {
-    padding: 6px;
-    border: 1px outset buttonborder;
+    padding: 8px 12px;
+    border: 1px solid #DAA520; /* Gold border */
     border-radius: 7px;
-    color: black;
-    background-color: #fff; /* Fixed: Assumed white for buttons */
+    color: #121212; /* Black text for contrast */
+    background-color: #FFFFFF; /* White background */
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s; /* Smooth hover */
+}
+
+a.button:hover {
+    background-color: #DAA520; /* Gold on hover */
+    color: #FFFFFF; /* White text on hover */
 }
 
 #pageContent {
     float: left;
-    color: #333333;
+    color: #FFFFFF; /* White text */
     line-height: 1.6;
     width: 95%;
-    height: auto; /* Fixed: Auto height */
+    height: auto;
     padding-left: 15px;
 }
 
 #content h2 {
-    color: #6b89bf; /* Fixed: Removed duplicate color */
+    color: #DAA520; /* Gold for h2 */
     padding-left: 5px;
 }
 
 #content h3 {
-    color: #28A684;
+    color: #DAA520; /* Gold for h3 */
     margin-left: 0px;
 }
 
 #pageContent img {
     width: 70%;
     display: block;
-    margin: 10px auto; /* Fixed: Better centering */
+    margin: 10px auto;
+    border-radius: 8px;
 }
 
 #pageContent li {
@@ -87,33 +97,36 @@ a.button {
 
 #leftEdge {
     float: left;
-    border-left: solid #CCCCCC thin;
-    background: #2297a6;
+    border-left: solid #DAA520 thin; /* Gold border */
+    background: #121212; /* Black to blend */
     width: 1%;
-    height: 100%; /* Fixed: Relative height */
+    height: 100%;
 }
 
 #rightEdge {
     float: right;
-    border-left: solid #CCCCCC thin;
-    background: #2297a6;
+    border-left: solid #DAA520 thin; /* Gold border */
+    background: #121212; /* Black to blend */
     width: 1%;
-    height: 100%; /* Fixed: Relative height */
+    height: 100%;
 }
 
 #footer {
-    width: 99.8%;
+    width: 100%;
     text-align: center;
     float: left;
     font-size: 12px;
     font-style: italic;
-    background: #f9e9a1;
-    border: solid #CCCCCC thin;
+    background: #DAA520; /* Gold background */
+    border: solid #FFFFFF thin; /* White border */
     border-top: none;
+    padding: 10px 0;
+    color: #121212; /* Black text for contrast */
 }
 
 #footer p {
     padding-left: 10px;
+    margin: 0;
 }
 
 #pageContent p {
@@ -127,15 +140,24 @@ a.button {
     margin-top: 20px;
 }
 
-/* Added: Media query for responsiveness */
+/* Responsiveness */
 @media (max-width: 768px) {
     #wrapper {
         margin-left: 10px;
         margin-right: 10px;
+        padding: 10px;
     }
     #pageContent ul img {
         float: none;
         width: 100%;
         margin: 10px 0;
+    }
+    a.button {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+    #header {
+        padding: 10px;
     }
 }
